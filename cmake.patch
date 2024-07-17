@@ -1,0 +1,15 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index b75736f..a65954e 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -12,8 +12,8 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/.cmake/)
+
+ include(GetGitRevisionDescription)
+
+-option(FLUENTUI_BUILD_EXAMPLES "Build FluentUI demo applications." ON)
+-option(FLUENTUI_BUILD_STATIC_LIB "Build static library." OFF)
++option(FLUENTUI_BUILD_EXAMPLES "Build FluentUI demo applications." OFF)
++option(FLUENTUI_BUILD_STATIC_LIB "Build static library." ON)
+
+ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
+ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
